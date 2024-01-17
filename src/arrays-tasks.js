@@ -123,10 +123,7 @@ function getStringsLength(arr) {
  *   getAverage([ 2, 3, 3 ])  => 2,67
  */
 function getAverage(arr) {
-  const sumArr = arr.reduce((accum, item) => {
-    accum += item;
-    return accum;
-  });
+  const sumArr = arr.reduce((accum, item) => accum + item);
   return sumArr / arr.length;
 }
 
